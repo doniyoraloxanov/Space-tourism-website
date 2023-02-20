@@ -1,0 +1,127 @@
+/*
+            SPACING SYSTEM (px)
+            2 / 4 / 8 / 12 / 16 / 24 / 32 / 48 / 64 / 80 / 96 / 128
+
+            FONT SIZE SYSTEM (px)
+            10 / 12 / 14 / 16 / 18 / 20 / 24 / 30 / 36 / 44 / 52 / 62 / 74 / 86 / 98
+            */
+
+/*
+            */
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  font-size: 62.5%;
+}
+
+body {
+  font-family: sans-serif;
+  line-height: 1;
+}
+
+/**************************/
+/* NAVIGATION */
+/**************************/
+
+.main {
+  background-image: url(assets/home/background-home-desktop.jpg);
+  background-size: cover;
+  height: 100vh;
+}
+
+.header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+
+  padding: 4.4rem 12.8rem 0 3.4rem;
+}
+
+.main-nav {
+  background-color: rgba(255, 255, 255, 0.07);
+  padding: 3.2rem 6.4rem;
+}
+
+.main-nav-list {
+  list-style: none;
+  font-size: 1.4rem;
+  display: flex;
+  gap: 4.8rem;
+}
+
+.main-nav-link .nav-number {
+  color: #e9ecef;
+  font-size: 1.6rem;
+}
+
+.main-nav-link {
+  color: #ced4da;
+  text-transform: uppercase;
+  letter-spacing: 1.5px;
+  text-decoration: none;
+}
+
+/**************************/
+/* SECTION HERO */
+/**************************/
+
+.section-hero {
+  padding: 3.2rem;
+}
+
+.hero {
+  max-width: 144rem;
+  margin: 0 auto;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-template-rows: 1fr 1fr;
+}
+
+.hero-text {
+  font-size: 1.6rem;
+  text-transform: uppercase;
+  letter-spacing: 2.4px;
+  color: #adb5bd;
+  margin-bottom: 2.4rem;
+}
+
+.primary-heading {
+  font-size: 12rem;
+  text-transform: uppercase;
+  color: #fff;
+  margin-bottom: 3.2rem;
+}
+
+.hero-description {
+  font-size: 1.4rem;
+  line-height: 1.8;
+  color: #adb5bd;
+}
+
+.hero-text-box {
+  grid-column: 1/2;
+  grid-row: 2/3;
+}
+
+.hero-link-box {
+  font-size: 2.4rem;
+  text-transform: uppercase;
+  font-weight: 500;
+  background-color: #fff;
+  color: #868e96;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  justify-self: end;
+  height: 280px;
+  width: 280px;
+  border-radius: 50%;
+  letter-spacing: 1.8px;
+  grid-column: 4/5;
+  grid-row: 2/3;
+}
