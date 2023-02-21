@@ -72,14 +72,15 @@ body {
 
 .section-hero {
   padding: 3.2rem;
+  padding-top: 12.8rem;
 }
 
 .hero {
   max-width: 144rem;
   margin: 0 auto;
   display: grid;
-  grid-template-columns: 1fr 1fr 1fr;
-  grid-template-rows: 1fr 1fr;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+  padding-top: 8rem;
 }
 
 .hero-text {
@@ -98,17 +99,14 @@ body {
 }
 
 .hero-description {
-  font-size: 1.4rem;
+  font-size: 1.6rem;
   line-height: 1.8;
   color: #adb5bd;
 }
 
-.hero-text-box {
-  grid-column: 1/2;
-  grid-row: 2/3;
-}
-
-.hero-link-box {
+.hero::after {
+  display: block;
+  content: "Explore";
   font-size: 2.4rem;
   text-transform: uppercase;
   font-weight: 500;
@@ -122,6 +120,6 @@ body {
   width: 280px;
   border-radius: 50%;
   letter-spacing: 1.8px;
-  grid-column: 4/5;
-  grid-row: 2/3;
+  position: absolute;
+  top: 55%;
 }
